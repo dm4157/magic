@@ -7,6 +7,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 时间岗哨
@@ -35,11 +36,11 @@ public class DateGuard {
     /**
      * 旧时代日期格式化对象缓存
      */
-    private static Map<Format, SimpleDateFormat> oldMap = new HashMap<>();
+    private static Map<Format, SimpleDateFormat> oldMap = new ConcurrentHashMap<>();
     /**
      * 新时代日期格式化对象缓存
      */
-    private static Map<Format, DateTimeFormatter> newMap = new HashMap<>();
+    private static Map<Format, DateTimeFormatter> newMap = new ConcurrentHashMap<>();
 
     /**
      * 今天

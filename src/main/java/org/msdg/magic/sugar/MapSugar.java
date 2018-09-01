@@ -13,6 +13,7 @@ public class MapSugar {
 
     /** 
      * 封装string类型的map
+     * @return  hashmap
      */
     public static HashMap<String, String> stringMap(Object...params) {
         HashMap<String, String> map = new HashMap<String, String>(params.length/2);
@@ -24,6 +25,7 @@ public class MapSugar {
 
     /**
      * 封装string类型的map，参数更加明确
+     * @return  hashmap
      */
     public static HashMap<String, String> stringMap(String...params) {
         HashMap<String, String> map = new HashMap<String, String>(params.length/2);
@@ -35,6 +37,7 @@ public class MapSugar {
 
     /**
      * 封装string类型的map
+     * @return  hashmap
      */
     public static HashMap<String, Object> paramMap(Object...params) {
         HashMap<String, Object> map = new HashMap<>(params.length/2);
@@ -46,6 +49,7 @@ public class MapSugar {
 
     /**
      * 封装object类型的map
+     * @return  hashmap
      */
     public static HashMap<Object, Object> objectMap(Object...params) {
         HashMap<Object, Object> map = new HashMap<Object, Object>(params.length/2);

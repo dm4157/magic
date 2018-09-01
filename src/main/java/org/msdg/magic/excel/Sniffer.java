@@ -26,7 +26,7 @@ public class Sniffer {
      * @param modelClass    实体类信息
      * @param fileName      将要导出的文件名, null表示只有一个@Excel,而我要的就是他
      * @param <T>           实体泛型
-     * @return              @Excel信息
+     * @return              Excel信息
      */
     public <T> Excel findExcel(Class<T> modelClass, String fileName) {
         Excel excelAnnotation = modelClass.getDeclaredAnnotation(Excel.class);
